@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Vacation Destinations WishList</h1>
+        <p>Found exciting places to visition on your next vacation? Use the form below to add them to your wishlist
+        </p>
+    </header>
+
+    <div class="container-fluid" id="main_container">
+        <form>
+            <div class="form-group">
+                <label for="destination">Destination name</label>
+                <input type="text" class="form-control" id="destination" name="destination"
+                    placeholder="Enter the name of the destination" required>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" name="location" placeholder="Where is it located?"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="photoUrl">Photo</label>
+                <input type="text" class="form-control" id="photoUrl" name="photoURl"
+                    placeholder="Enter an image url of the place">
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" name="description"
+                    placeholder="Where is it located?">
+            </div>
+
+            <input type="button" class="btn btn-primary" value="Add to list" onClick="addCard()">
+        </form>
+
+
+    </div>
+
+    <div class="container-fluid" id="card_container">
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
