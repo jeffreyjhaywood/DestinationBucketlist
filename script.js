@@ -1,6 +1,9 @@
 let numCards = 0;
 
 function addCard() {
+    if (numCards === 0) {
+        document.getElementById("detailsHeader").innerHTML = "My Wishlist";
+    }
     // Grab the values from text inputs
     let destination = document.getElementById("destination").value;
     let location = document.getElementById("location").value;

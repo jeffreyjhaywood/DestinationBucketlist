@@ -6,9 +6,16 @@ header {
 #main_container {
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #card_container {
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
+}
+
+#form-container {
+    flex: 1;
 }
